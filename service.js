@@ -21,7 +21,7 @@ http.createServer(function (request, response) {
     if (get.vcode == undefined || get.vcode == '') {
         response.end(JSON.stringify({ code: 0, msg: "VCODE不能为空！" }));
     }
-    if (get.md5 == undefined || get.vcode == '') {
+    if (get.md5 == undefined || get.md5 == '') {
         var ismd5 = false;
     }else{
         var ismd5 = true;
